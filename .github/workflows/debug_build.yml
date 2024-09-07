@@ -1,18 +1,7 @@
 name: Build
 
-on:
-  push:
-    branches:
-      - master
-    paths-ignore:
-      - '**.md'
-      - 'img/**'
-  pull_request:
-    branches:
-      - master
-    paths-ignore:
-      - '**.md'
-      - 'img/**'
+on: 
+  workflow_dispatch: 
 
 jobs:
   build:
